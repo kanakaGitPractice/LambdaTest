@@ -55,13 +55,19 @@ public class SimpleFormDemo {
 				  browserOptions.setCapability("LT:Options", ltOptions);
 				  driver=new ChromeDriver(browserOptions);
 				  
-			 }else if(browser.equalsIgnoreCase("firefox")) {
+			 }else if(browser.equalsIgnoreCase("Firefox")) {
 				 FirefoxOptions browserOptions = new FirefoxOptions();
 				 browserOptions.setPlatformName(os);
 				 browserOptions.setBrowserVersion(version);
 				 browserOptions.setCapability("LT:Options", ltOptions);
 				 driver=new FirefoxDriver(browserOptions);
 			 }else if(browser.equalsIgnoreCase("Microsoft Edge")) {
+				 EdgeOptions browserOptions = new EdgeOptions();
+				 browserOptions.setPlatformName(os);
+				 browserOptions.setBrowserVersion(version);
+				 browserOptions.setCapability("LT:Options", ltOptions);
+				 driver=new EdgeDriver(browserOptions);
+			 }else if(browser.equalsIgnoreCase("Internet Explorer")) {
 				 EdgeOptions browserOptions = new EdgeOptions();
 				 browserOptions.setPlatformName(os);
 				 browserOptions.setBrowserVersion(version);
