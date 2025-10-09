@@ -1,3 +1,5 @@
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.time.Duration;
 import java.util.HashMap;
 
@@ -13,6 +15,7 @@ import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -29,14 +32,15 @@ public class SimpleFormDemo {
 	private String message="Welcome to LambdaTest";
 	String actualMsg =null;
 	WebDriver driver=null;
+	String gridURL = "@hub.lambdatest.com/wd/hub";
 	
 	@Parameters({"browser","version","os"})
 	@BeforeClass
 	public void setUp(String browser,String version,String os) {
 			
 		  HashMap<String, Object> ltOptions = new HashMap<String, Object>();
-		  ltOptions.put("username", "pkanakadurgabqe");
-		  ltOptions.put("accessKey", "zMeNWbVncBwDlKdhvHEdRAmM37UHazGqcnkIg7XSoDlZfzR6Rb");
+		  //ltOptions.put("username", "pkanakadurgabqe");
+		  //ltOptions.put("accessKey", "zMeNWbVncBwDlKdhvHEdRAmM37UHazGqcnkIg7XSoDlZfzR6Rb");
 		  ltOptions.put("geoLocation", "US");
 		  ltOptions.put("visual", true);
 		  ltOptions.put("video", true);
@@ -54,6 +58,13 @@ public class SimpleFormDemo {
 				  browserOptions.setBrowserVersion(version);
 				  browserOptions.setCapability("LT:Options", ltOptions);
 				  driver=new ChromeDriver(browserOptions);
+				  try {
+			            driver = new RemoteWebDriver(new URL("https://pkanakadurgabqe:" + "zMeNWbVncBwDlKdhvHEdRAmM37UHazGqcnkIg7XSoDlZfzR6Rb" + gridURL), browserOptions);
+			        } catch (MalformedURLException e) {
+			            System.out.println("Invalid grid URL");
+			        } catch (Exception e) {
+			            System.out.println(e.getMessage());
+			        }
 				  
 			 }else if(browser.equalsIgnoreCase("Firefox")) {
 				 FirefoxOptions browserOptions = new FirefoxOptions();
@@ -61,19 +72,41 @@ public class SimpleFormDemo {
 				 browserOptions.setBrowserVersion(version);
 				 browserOptions.setCapability("LT:Options", ltOptions);
 				 driver=new FirefoxDriver(browserOptions);
+				 try {
+			            driver = new RemoteWebDriver(new URL("https://pkanakadurgabqe:" + "zMeNWbVncBwDlKdhvHEdRAmM37UHazGqcnkIg7XSoDlZfzR6Rb" + gridURL), browserOptions);
+			        } catch (MalformedURLException e) {
+			            System.out.println("Invalid grid URL");
+			        } catch (Exception e) {
+			            System.out.println(e.getMessage());
+			        }
 			 }else if(browser.equalsIgnoreCase("Microsoft Edge")) {
 				 EdgeOptions browserOptions = new EdgeOptions();
 				 browserOptions.setPlatformName(os);
 				 browserOptions.setBrowserVersion(version);
 				 browserOptions.setCapability("LT:Options", ltOptions);
 				 driver=new EdgeDriver(browserOptions);
+				 try {
+			            driver = new RemoteWebDriver(new URL("https://pkanakadurgabqe:" + "zMeNWbVncBwDlKdhvHEdRAmM37UHazGqcnkIg7XSoDlZfzR6Rb" + gridURL), browserOptions);
+			        } catch (MalformedURLException e) {
+			            System.out.println("Invalid grid URL");
+			        } catch (Exception e) {
+			            System.out.println(e.getMessage());
+			        }
 			 }else if(browser.equalsIgnoreCase("Internet Explorer")) {
 				 EdgeOptions browserOptions = new EdgeOptions();
 				 browserOptions.setPlatformName(os);
 				 browserOptions.setBrowserVersion(version);
 				 browserOptions.setCapability("LT:Options", ltOptions);
 				 driver=new EdgeDriver(browserOptions);
+				 try {
+			            driver = new RemoteWebDriver(new URL("https://pkanakadurgabqe:" + "zMeNWbVncBwDlKdhvHEdRAmM37UHazGqcnkIg7XSoDlZfzR6Rb" + gridURL), browserOptions);
+			        } catch (MalformedURLException e) {
+			            System.out.println("Invalid grid URL");
+			        } catch (Exception e) {
+			            System.out.println(e.getMessage());
+			        }
 			 }
+		 
 		 
 		
 	}
