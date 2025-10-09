@@ -6,6 +6,7 @@ import java.util.HashMap;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -15,6 +16,7 @@ import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -31,13 +33,27 @@ public class SimpleFormDemo {
 	 
 	private String message="Welcome to LambdaTest";
 	String actualMsg =null;
-	WebDriver driver=null;
+	RemoteWebDriver driver=null;
 	String gridURL = "@hub.lambdatest.com/wd/hub";
 	
 	/*@Parameters({"browser","version","os"})
 	@BeforeClass
 	public void setUp(String browser,String version,String os) {
 			
+			DesiredCapabilities caps = new DesiredCapabilities();
+        caps.setCapability("platform", "MacOS Catalina");
+        caps.setCapability("browserName", "Safari");
+        caps.setCapability("version", "latest");
+        caps.setCapability("build", "TestNG With Java");
+        caps.setCapability("name", m.getName() + " - " + this.getClass().getName());
+        caps.setCapability("plugin", "git-testng");
+
+        String[] Tags = new String[] { "Feature", "Falcon", "Severe" };
+
+        caps.setCapability("tags", Tags);
+
+        driver = new RemoteWebDriver(new URL("https://" + username + ":" + authkey + hub), caps);
+
 		  HashMap<String, Object> ltOptions = new HashMap<String, Object>();
 		  ltOptions.put("username", "pkanakadurgabqe");
 		  ltOptions.put("accessKey", "zMeNWbVncBwDlKdhvHEdRAmM37UHazGqcnkIg7XSoDlZfzR6Rb");
@@ -111,8 +127,30 @@ public class SimpleFormDemo {
 		
 	}*/
 	
-	@BeforeMethod
-	public void launchPage() {
+	    @BeforeClass
+	    public void setUp() throws MalformedURLException {
+		String username = System.getenv("LT_USERNAME") == null ? "pkanakadurgabqe" : System.getenv("LT_USERNAME");
+        String authkey = System.getenv("LT_ACCESS_KEY") == null ? "zMeNWbVncBwDlKdhvHEdRAmM37UHazGqcnkIg7XSoDlZfzR6Rb" : System.getenv("LT_ACCESS_KEY");
+        ;
+        String hub = "@hub.lambdatest.com/wd/hub";
+        DesiredCapabilities caps = new DesiredCapabilities();
+        caps.setPlatform(Platform.WIN10);
+        
+        //caps.setCapability("platform", "MacOS Catalina");
+        caps.setCapability("browserName", "Chrome");
+        caps.setCapability("version", "dev");
+        caps.setCapability("build", "selenium With Java");
+        caps.setCapability("name",  this.getClass().getName());
+        //caps.setCapability("plugin", "git-testng");
+
+        String[] Tags = new String[] { "Feature", "Falcon", "Severe" };
+
+        caps.setCapability("tags", Tags);
+
+        driver = new RemoteWebDriver(new URL("https://" + username + ":" + authkey + hub), caps);
+	    }
+        @BeforeMethod
+    	public void launchPage() {
 		driver.get("https://www.lambdatest.com/selenium-playground");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
@@ -120,7 +158,7 @@ public class SimpleFormDemo {
 	@Test(timeOut = 20000)
 	public void testScenario1() {
 		
-		
+		driver.executeScript("lambdatest_executor: {\"action\": \"stepcontext\", \"arguments\": {\"data\": \"Opening WebApp\", \"level\": \"info\"}}");
 		driver.findElement(By.linkText("Simple Form Demo")).click();
 		String url = driver.getCurrentUrl();
 		System.out.println(url);
@@ -135,6 +173,7 @@ public class SimpleFormDemo {
 	
 	@Test(timeOut = 20000)
 	public void testSliders() {
+		driver.executeScript("lambdatest_executor: {\"action\": \"stepcontext\", \"arguments\": {\"data\": \"Opening WebApp\", \"level\": \"info\"}}");
 		driver.findElement(By.linkText("Drag & Drop Sliders")).click();
 		WebElement slider =driver.findElement(By.cssSelector("div.sp__range>input[value='15']"));
 		
@@ -147,6 +186,7 @@ public class SimpleFormDemo {
 	
 	@Test(timeOut = 20000)
 	public void submitForm() throws InterruptedException {
+		driver.executeScript("lambdatest_executor: {\"action\": \"stepcontext\", \"arguments\": {\"data\": \"Opening WebApp\", \"level\": \"info\"}}");
 		driver.findElement(By.partialLinkText("Input Form ")).click();
 		WebElement btnSubmit = driver.findElement(By.xpath("//button[text()='Submit']"));
 		btnSubmit.click();
