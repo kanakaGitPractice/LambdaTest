@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test" parallel="methods">
     <parameter name="browser" value="Chrome"></parameter>
-    <parameter name="version" value="128.0"/>
+    <parameter name="version" value="dev"/>
     <parameter name="os" value="Windows 10"/>
     <classes>
       <class name=".SimpleFormDemo"/>

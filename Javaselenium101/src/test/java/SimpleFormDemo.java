@@ -34,13 +34,13 @@ public class SimpleFormDemo {
 	WebDriver driver=null;
 	String gridURL = "@hub.lambdatest.com/wd/hub";
 	
-	@Parameters({"browser","version","os"})
+	/*@Parameters({"browser","version","os"})
 	@BeforeClass
 	public void setUp(String browser,String version,String os) {
 			
 		  HashMap<String, Object> ltOptions = new HashMap<String, Object>();
-		  //ltOptions.put("username", "pkanakadurgabqe");
-		  //ltOptions.put("accessKey", "zMeNWbVncBwDlKdhvHEdRAmM37UHazGqcnkIg7XSoDlZfzR6Rb");
+		  ltOptions.put("username", "pkanakadurgabqe");
+		  ltOptions.put("accessKey", "zMeNWbVncBwDlKdhvHEdRAmM37UHazGqcnkIg7XSoDlZfzR6Rb");
 		  ltOptions.put("geoLocation", "US");
 		  ltOptions.put("visual", true);
 		  ltOptions.put("video", true);
@@ -49,15 +49,15 @@ public class SimpleFormDemo {
 		  ltOptions.put("tunnel", true);
 		  ltOptions.put("selenium_version", "4.35.0");
 		  ltOptions.put("build", "LambdaJavaSelenium101");
-		  ltOptions.put("name", "LambdaTestJavaSelenium101");
+		  ltOptions.put("project", "JavaSelenium101");
 		 
 		  
-		  if(browser.equalsIgnoreCase("Chrome")) {
+		 if(browser.equalsIgnoreCase("Chrome")) {
 				  ChromeOptions browserOptions = new ChromeOptions();
 				  browserOptions.setPlatformName(os);
 				  browserOptions.setBrowserVersion(version);
 				  browserOptions.setCapability("LT:Options", ltOptions);
-				  driver=new ChromeDriver(browserOptions);
+				  //driver=new ChromeDriver(browserOptions);
 				  try {
 			            driver = new RemoteWebDriver(new URL("https://pkanakadurgabqe:" + "zMeNWbVncBwDlKdhvHEdRAmM37UHazGqcnkIg7XSoDlZfzR6Rb" + gridURL), browserOptions);
 			        } catch (MalformedURLException e) {
@@ -71,7 +71,7 @@ public class SimpleFormDemo {
 				 browserOptions.setPlatformName(os);
 				 browserOptions.setBrowserVersion(version);
 				 browserOptions.setCapability("LT:Options", ltOptions);
-				 driver=new FirefoxDriver(browserOptions);
+				 //driver=new FirefoxDriver(browserOptions);
 				 try {
 			            driver = new RemoteWebDriver(new URL("https://pkanakadurgabqe:" + "zMeNWbVncBwDlKdhvHEdRAmM37UHazGqcnkIg7XSoDlZfzR6Rb" + gridURL), browserOptions);
 			        } catch (MalformedURLException e) {
@@ -84,7 +84,7 @@ public class SimpleFormDemo {
 				 browserOptions.setPlatformName(os);
 				 browserOptions.setBrowserVersion(version);
 				 browserOptions.setCapability("LT:Options", ltOptions);
-				 driver=new EdgeDriver(browserOptions);
+				 //driver=new EdgeDriver(browserOptions);
 				 try {
 			            driver = new RemoteWebDriver(new URL("https://pkanakadurgabqe:" + "zMeNWbVncBwDlKdhvHEdRAmM37UHazGqcnkIg7XSoDlZfzR6Rb" + gridURL), browserOptions);
 			        } catch (MalformedURLException e) {
@@ -97,7 +97,7 @@ public class SimpleFormDemo {
 				 browserOptions.setPlatformName(os);
 				 browserOptions.setBrowserVersion(version);
 				 browserOptions.setCapability("LT:Options", ltOptions);
-				 driver=new EdgeDriver(browserOptions);
+				 //driver=new EdgeDriver(browserOptions);
 				 try {
 			            driver = new RemoteWebDriver(new URL("https://pkanakadurgabqe:" + "zMeNWbVncBwDlKdhvHEdRAmM37UHazGqcnkIg7XSoDlZfzR6Rb" + gridURL), browserOptions);
 			        } catch (MalformedURLException e) {
@@ -109,7 +109,8 @@ public class SimpleFormDemo {
 		 
 		 
 		
-	}
+	}*/
+	
 	@BeforeMethod
 	public void launchPage() {
 		driver.get("https://www.lambdatest.com/selenium-playground");
