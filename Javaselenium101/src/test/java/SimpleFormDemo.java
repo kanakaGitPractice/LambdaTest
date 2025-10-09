@@ -44,6 +44,8 @@ public class SimpleFormDemo {
 		  ltOptions.put("project", "Untitled");
 		  ltOptions.put("tunnel", true);
 		  ltOptions.put("selenium_version", "4.35.0");
+		  ltOptions.put("build", "LambdaJavaSelenium101");
+		  ltOptions.put("name", "LambdaTestJavaSelenium101");
 		 
 		  
 		  if(browser.equalsIgnoreCase("Chrome")) {
@@ -75,7 +77,7 @@ public class SimpleFormDemo {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 	}
-	//@Test
+	@Test(timeOut = 20000)
 	public void testScenario1() {
 		
 		
@@ -91,7 +93,7 @@ public class SimpleFormDemo {
 		Assert.assertEquals(actualMsg,message);
 	}
 	
-	@Test
+	@Test(timeOut = 20000)
 	public void testSliders() {
 		driver.findElement(By.linkText("Drag & Drop Sliders")).click();
 		WebElement slider =driver.findElement(By.cssSelector("div.sp__range>input[value='15']"));
@@ -103,7 +105,7 @@ public class SimpleFormDemo {
 		}
 	}
 	
-	//@Test
+	@Test(timeOut = 20000)
 	public void submitForm() throws InterruptedException {
 		driver.findElement(By.partialLinkText("Input Form ")).click();
 		WebElement btnSubmit = driver.findElement(By.xpath("//button[text()='Submit']"));
