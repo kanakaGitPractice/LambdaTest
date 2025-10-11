@@ -1,29 +1,341 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="0" failed="0" skipped="3">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-09T15:45:08 CDT" name="Default suite" finished-at="2025-10-09T15:45:14 CDT" duration-ms="6589">
+  <suite started-at="2025-10-11T14:34:00 CDT" name="Default suite" finished-at="2025-10-11T14:34:01 CDT" duration-ms="804">
     <groups>
     </groups>
-    <test started-at="2025-10-09T15:45:08 CDT" name="Default test" finished-at="2025-10-09T15:45:14 CDT" duration-ms="6589">
-      <class name="SimpleFormDemo">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:SimpleFormDemo@6b81ce95]" started-at="2025-10-09T15:45:08 CDT" name="setUp" finished-at="2025-10-09T15:45:10 CDT" duration-ms="1929" status="PASS">
+    <test started-at="2025-10-11T14:34:00 CDT" name="Default test" finished-at="2025-10-11T14:34:01 CDT" duration-ms="804">
+      <class name="ChromeJavaSelenium">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ChromeJavaSelenium@67c27493]" started-at="2025-10-11T14:34:00 CDT" name="setUp" finished-at="2025-10-11T14:34:01 CDT" duration-ms="681" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'KANAKADURGA', ip: '192.168.1.172'
+Build info: version: '4.36.0', revision: '6d115cfd87'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: Chrome, build: selenium With Java, name: ChromeJavaSelenium, network: true, platformName: Windows 10, plugin: java-java, tags: [Feature, Falcon, Severe], tunnel: true, version: dev, video: true, visual: true}]}]
+Capabilities {browserName: Chrome, build: selenium With Java, name: ChromeJavaSelenium, network: true, platformName: Windows 10, plugin: java-java, tags: [Feature, Falcon, Severe], tunnel: true, version: dev, video: true, visual: true}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'KANAKADURGA', ip: '192.168.1.172'
+Build info: version: '4.36.0', revision: '6d115cfd87'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: Chrome, build: selenium With Java, name: ChromeJavaSelenium, network: true, platformName: Windows 10, plugin: java-java, tags: [Feature, Falcon, Severe], tunnel: true, version: dev, video: true, visual: true}]}]
+Capabilities {browserName: Chrome, build: selenium With Java, name: ChromeJavaSelenium, network: true, platformName: Windows 10, plugin: java-java, tags: [Feature, Falcon, Severe], tunnel: true, version: dev, video: true, visual: true}
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:575)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:246)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:152)
+at ChromeJavaSelenium.setUp(ChromeJavaSelenium.java:86)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: java.lang.IllegalArgumentException: Illegal key values seen in w3c capabilities: [build, name, network, plugin, tags, tunnel, version, video, visual]
+at org.openqa.selenium.remote.NewSessionPayload.lambda$validate$5(NewSessionPayload.java:163)
+at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:555)
+at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:556)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:212)
+at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:556)
+at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1709)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:556)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:546)
+at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:611)
+at org.openqa.selenium.remote.NewSessionPayload.validate(NewSessionPayload.java:167)
+at org.openqa.selenium.remote.NewSessionPayload.<init>(NewSessionPayload.java:70)
+at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:99)
+at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:84)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:60)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="launchPage()[pri:0, instance:SimpleFormDemo@6b81ce95]" started-at="2025-10-09T15:45:10 CDT" name="launchPage" finished-at="2025-10-09T15:45:12 CDT" duration-ms="1678" status="PASS">
+        <test-method is-config="true" signature="launchPage()[pri:0, instance:ChromeJavaSelenium@67c27493]" started-at="2025-10-11T14:34:01 CDT" name="launchPage" finished-at="1969-12-31T18:00:00 CST" duration-ms="-1760211241122" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchPage -->
-        <test-method signature="testSliders()[pri:0, instance:SimpleFormDemo@6b81ce95]" started-at="2025-10-09T15:45:12 CDT" name="testSliders" finished-at="2025-10-09T15:45:14 CDT" duration-ms="2237" status="PASS">
+        <test-method signature="submitForm()[pri:0, instance:ChromeJavaSelenium@67c27493]" started-at="2025-10-11T14:34:01 CDT" name="submitForm" finished-at="2025-10-11T14:34:01 CDT" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'KANAKADURGA', ip: '192.168.1.172'
+Build info: version: '4.36.0', revision: '6d115cfd87'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: Chrome, build: selenium With Java, name: ChromeJavaSelenium, network: true, platformName: Windows 10, plugin: java-java, tags: [Feature, Falcon, Severe], tunnel: true, version: dev, video: true, visual: true}]}]
+Capabilities {browserName: Chrome, build: selenium With Java, name: ChromeJavaSelenium, network: true, platformName: Windows 10, plugin: java-java, tags: [Feature, Falcon, Severe], tunnel: true, version: dev, video: true, visual: true}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'KANAKADURGA', ip: '192.168.1.172'
+Build info: version: '4.36.0', revision: '6d115cfd87'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: Chrome, build: selenium With Java, name: ChromeJavaSelenium, network: true, platformName: Windows 10, plugin: java-java, tags: [Feature, Falcon, Severe], tunnel: true, version: dev, video: true, visual: true}]}]
+Capabilities {browserName: Chrome, build: selenium With Java, name: ChromeJavaSelenium, network: true, platformName: Windows 10, plugin: java-java, tags: [Feature, Falcon, Severe], tunnel: true, version: dev, video: true, visual: true}
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:575)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:246)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:152)
+at ChromeJavaSelenium.setUp(ChromeJavaSelenium.java:86)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: java.lang.IllegalArgumentException: Illegal key values seen in w3c capabilities: [build, name, network, plugin, tags, tunnel, version, video, visual]
+at org.openqa.selenium.remote.NewSessionPayload.lambda$validate$5(NewSessionPayload.java:163)
+at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:555)
+at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:556)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:212)
+at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:556)
+at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1709)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:556)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:546)
+at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:611)
+at org.openqa.selenium.remote.NewSessionPayload.validate(NewSessionPayload.java:167)
+at org.openqa.selenium.remote.NewSessionPayload.<init>(NewSessionPayload.java:70)
+at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:99)
+at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:84)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:60)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSliders -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:SimpleFormDemo@6b81ce95]" started-at="2025-10-09T15:45:14 CDT" name="teardown" finished-at="2025-10-09T15:45:14 CDT" duration-ms="716" status="PASS">
+        </test-method> <!-- submitForm -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:ChromeJavaSelenium@67c27493]" started-at="2025-10-11T14:34:01 CDT" name="teardown" finished-at="1969-12-31T18:00:00 CST" duration-ms="-1760211241142" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- SimpleFormDemo -->
+        <test-method is-config="true" signature="launchPage()[pri:0, instance:ChromeJavaSelenium@67c27493]" started-at="2025-10-11T14:34:01 CDT" name="launchPage" finished-at="1969-12-31T18:00:00 CST" duration-ms="-1760211241145" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchPage -->
+        <test-method signature="testSimpleForm()[pri:0, instance:ChromeJavaSelenium@67c27493]" started-at="2025-10-11T14:34:01 CDT" name="testSimpleForm" finished-at="2025-10-11T14:34:01 CDT" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'KANAKADURGA', ip: '192.168.1.172'
+Build info: version: '4.36.0', revision: '6d115cfd87'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: Chrome, build: selenium With Java, name: ChromeJavaSelenium, network: true, platformName: Windows 10, plugin: java-java, tags: [Feature, Falcon, Severe], tunnel: true, version: dev, video: true, visual: true}]}]
+Capabilities {browserName: Chrome, build: selenium With Java, name: ChromeJavaSelenium, network: true, platformName: Windows 10, plugin: java-java, tags: [Feature, Falcon, Severe], tunnel: true, version: dev, video: true, visual: true}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'KANAKADURGA', ip: '192.168.1.172'
+Build info: version: '4.36.0', revision: '6d115cfd87'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: Chrome, build: selenium With Java, name: ChromeJavaSelenium, network: true, platformName: Windows 10, plugin: java-java, tags: [Feature, Falcon, Severe], tunnel: true, version: dev, video: true, visual: true}]}]
+Capabilities {browserName: Chrome, build: selenium With Java, name: ChromeJavaSelenium, network: true, platformName: Windows 10, plugin: java-java, tags: [Feature, Falcon, Severe], tunnel: true, version: dev, video: true, visual: true}
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:575)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:246)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:152)
+at ChromeJavaSelenium.setUp(ChromeJavaSelenium.java:86)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: java.lang.IllegalArgumentException: Illegal key values seen in w3c capabilities: [build, name, network, plugin, tags, tunnel, version, video, visual]
+at org.openqa.selenium.remote.NewSessionPayload.lambda$validate$5(NewSessionPayload.java:163)
+at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:555)
+at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:556)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:212)
+at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:556)
+at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1709)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:556)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:546)
+at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:611)
+at org.openqa.selenium.remote.NewSessionPayload.validate(NewSessionPayload.java:167)
+at org.openqa.selenium.remote.NewSessionPayload.<init>(NewSessionPayload.java:70)
+at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:99)
+at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:84)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:60)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSimpleForm -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:ChromeJavaSelenium@67c27493]" started-at="2025-10-11T14:34:01 CDT" name="teardown" finished-at="1969-12-31T18:00:00 CST" duration-ms="-1760211241155" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchPage()[pri:0, instance:ChromeJavaSelenium@67c27493]" started-at="2025-10-11T14:34:01 CDT" name="launchPage" finished-at="1969-12-31T18:00:00 CST" duration-ms="-1760211241159" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchPage -->
+        <test-method signature="testSliders()[pri:0, instance:ChromeJavaSelenium@67c27493]" started-at="2025-10-11T14:34:01 CDT" name="testSliders" finished-at="2025-10-11T14:34:01 CDT" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'KANAKADURGA', ip: '192.168.1.172'
+Build info: version: '4.36.0', revision: '6d115cfd87'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: Chrome, build: selenium With Java, name: ChromeJavaSelenium, network: true, platformName: Windows 10, plugin: java-java, tags: [Feature, Falcon, Severe], tunnel: true, version: dev, video: true, visual: true}]}]
+Capabilities {browserName: Chrome, build: selenium With Java, name: ChromeJavaSelenium, network: true, platformName: Windows 10, plugin: java-java, tags: [Feature, Falcon, Severe], tunnel: true, version: dev, video: true, visual: true}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'KANAKADURGA', ip: '192.168.1.172'
+Build info: version: '4.36.0', revision: '6d115cfd87'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: Chrome, build: selenium With Java, name: ChromeJavaSelenium, network: true, platformName: Windows 10, plugin: java-java, tags: [Feature, Falcon, Severe], tunnel: true, version: dev, video: true, visual: true}]}]
+Capabilities {browserName: Chrome, build: selenium With Java, name: ChromeJavaSelenium, network: true, platformName: Windows 10, plugin: java-java, tags: [Feature, Falcon, Severe], tunnel: true, version: dev, video: true, visual: true}
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:575)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:246)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:152)
+at ChromeJavaSelenium.setUp(ChromeJavaSelenium.java:86)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: java.lang.IllegalArgumentException: Illegal key values seen in w3c capabilities: [build, name, network, plugin, tags, tunnel, version, video, visual]
+at org.openqa.selenium.remote.NewSessionPayload.lambda$validate$5(NewSessionPayload.java:163)
+at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:555)
+at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:556)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:212)
+at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:556)
+at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1709)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:556)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:546)
+at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:611)
+at org.openqa.selenium.remote.NewSessionPayload.validate(NewSessionPayload.java:167)
+at org.openqa.selenium.remote.NewSessionPayload.<init>(NewSessionPayload.java:70)
+at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:99)
+at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:84)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:60)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSliders -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:ChromeJavaSelenium@67c27493]" started-at="2025-10-11T14:34:01 CDT" name="teardown" finished-at="1969-12-31T18:00:00 CST" duration-ms="-1760211241173" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- ChromeJavaSelenium -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

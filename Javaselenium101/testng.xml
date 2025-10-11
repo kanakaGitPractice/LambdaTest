@@ -3,10 +3,10 @@
 <suite name="Suite">
   <test thread-count="5" name="JavaSeleniumTest" parallel="classes">
     <classes>
-      <class name=".IEJavaSelenium"/>
-      <class name=".ChromeJavaSelenium"/>
-      <class name=".EdgeJavaSelenium"/>
-      <class name=".FirefoxJavaSelenium"/>
+      <class name="C:\Users\pkana\git\LamdaTest\Javaselenium101\src\test\java\IEJavaSelenium.java"/>
+      <class name="C:\Users\pkana\git\LamdaTest\Javaselenium101\src\test\java\ChromeJavaSelenium.java"/>
+      <class name="C:\Users\pkana\git\LamdaTest\Javaselenium101\src\test\java\EdgeJavaSelenium.java"/>
+      <class name="C:\Users\pkana\git\LamdaTest\Javaselenium101\src\test\java\FirefoxJavaSelenium.java"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

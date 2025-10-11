@@ -1,8 +1,13 @@
-import java.net.MalformedURLException;
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.net.URL;
 import java.time.Duration;
 import java.util.HashMap;
 
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -28,6 +33,10 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ChromeJavaSelenium {
 	 
@@ -35,14 +44,29 @@ public class ChromeJavaSelenium {
 	String actualMsg =null;
 	RemoteWebDriver driver=null;
 	String gridURL = "@hub.lambdatest.com/wd/hub";
-	
+	XSSFWorkbook book;
+	XSSFSheet sheet;
+	XSSFRow row;
+	XSSFCell col;
 
 	    @BeforeClass
-	    public void setUp() throws MalformedURLException {
+	    public void setUp() throws IOException {
 			String username = System.getenv("LT_USERNAME") == null ? "pkanakadurgabqe" : System.getenv("LT_USERNAME");
-	        String authkey = System.getenv("LT_ACCESS_KEY") == null ? "zMeNWbVncBwDlKdhvHEdRAmM37UHazGqcnkIg7XSoDlZfzR6Rb" : System.getenv("LT_ACCESS_KEY");
+	        String authkey = System.getenv("LT_Access Key") == null ? "zMeNWbVncBwDlKdhvHEdRAmM37UHazGqcnkIg7XSoDlZfzR6Rb" : System.getenv("LT_Access Key");
 	        ;
 	        String hub = "@hub.lambdatest.com/wd/hub";
+	        
+	     /*   FileInputStream file = new FileInputStream("C:\\Users\\pkana\\git\\LamdaTest\\Javaselenium101\\src\\test\\resources\\selenium_java_101.xlsx");
+	        book = new XSSFWorkbook(file);
+	        sheet = book.getSheet("Sheet1");
+	        int rows = sheet.getLastRowNum();
+	  	    int cols = sheet.getRow(1).getLastCellNum();
+	  	  for(int i =0; i<rows;i++) {
+			  XSSFRow row = sheet.getRow(i);
+			  for(int j=0;j<cols;j++) {
+				  System.out.println(row.getCell(j));
+			  }
+		  }*/
 	        DesiredCapabilities caps = new DesiredCapabilities();
 	        caps.setPlatform(Platform.WIN10);
 	        caps.setCapability("browserName", "Chrome");
