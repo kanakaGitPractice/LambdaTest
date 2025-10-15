@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="classes" name="Chrome Test(failed)">
+    <parameter name="Browser Name" value="Chrome"/>
+    <parameter name="Browser Version" value="128.0"/>
+    <parameter name="URL" value="https://www.lambdatest.com/selenium-playground/"/>
+    <parameter name="Platform Name" value="Windows 10"/>
+    <classes>
+      <class name="com.lambdatest.LambdaTestNGTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="verifyPageTitle"/>
+          <include name="setUp"/>
+          <include name="launchPage"/>
+        </methods>
+      </class> <!-- com.lambdatest.LambdaTestNGTest -->
+    </classes>
+  </test> <!-- Chrome Test(failed) -->
+  <test thread-count="5" parallel="classes" name="Firefox Test(failed)">
+    <parameter name="Browser Name" value="Firefox"/>
+    <parameter name="Browser Version" value="130.0"/>
+    <parameter name="URL" value="https://www.lambdatest.com/selenium-playground/"/>
+    <parameter name="Platform Name" value="Windows 11"/>
+    <classes>
+      <class name="com.lambdatest.LambdaTestNGTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="verifyPageTitle"/>
+          <include name="setUp"/>
+          <include name="launchPage"/>
+        </methods>
+      </class> <!-- com.lambdatest.LambdaTestNGTest -->
+    </classes>
+  </test> <!-- Firefox Test(failed) -->
+  <test thread-count="5" parallel="classes" name="Microsoft Edge Test(failed)">
+    <parameter name="Browser Name" value="Microsoft Edge"/>
+    <parameter name="Browser Version" value="127.0"/>
+    <parameter name="URL" value="https://www.lambdatest.com/selenium-playground/"/>
+    <parameter name="Platform Name" value="macOS Ventura"/>
+    <classes>
+      <class name="com.lambdatest.LambdaTestNGTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="verifyPageTitle"/>
+          <include name="setUp"/>
+          <include name="launchPage"/>
+        </methods>
+      </class> <!-- com.lambdatest.LambdaTestNGTest -->
+    </classes>
+  </test> <!-- Microsoft Edge Test(failed) -->
+  <test thread-count="5" parallel="classes" name="Internet Explorer Test(failed)">
+    <parameter name="Browser Name" value="Internet Explorer"/>
+    <parameter name="Browser Version" value="11.0"/>
+    <parameter name="URL" value="https://www.lambdatest.com/selenium-playground/"/>
+    <parameter name="Platform Name" value="Windows 10"/>
+    <classes>
+      <class name="com.lambdatest.LambdaTestNGTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="verifyPageTitle"/>
+          <include name="setUp"/>
+          <include name="validateAlert"/>
+          <include name="launchPage"/>
+        </methods>
+      </class> <!-- com.lambdatest.LambdaTestNGTest -->
+    </classes>
+  </test> <!-- Internet Explorer Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

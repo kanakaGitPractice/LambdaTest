@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="12" passed="7" failed="5" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Page Title:Selenium Grid Online | Run Selenium Test On Cloud]]>
+    </line>
+    <line>
+      <![CDATA[Page Title:Selenium Grid Online | Run Selenium Test On Cloud]]>
+    </line>
+    <line>
+      <![CDATA[Page Title:Selenium Grid Online | Run Selenium Test On Cloud]]>
+    </line>
+    <line>
+      <![CDATA[Page Title:Selenium Grid Online | Run Selenium Test On Cloud]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2025-10-15T16:26:53 CDT" name="Suite" finished-at="2025-10-15T16:28:38 CDT" duration-ms="105019">
+    <groups>
+    </groups>
+    <test started-at="2025-10-15T16:26:53 CDT" name="Chrome Test" finished-at="2025-10-15T16:27:17 CDT" duration-ms="24465">
+      <class name="com.lambdatest.LambdaTestNGTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.lambdatest.LambdaTestNGTest@385e9564]" started-at="2025-10-15T16:26:53 CDT" name="setUp" finished-at="2025-10-15T16:27:09 CDT" duration-ms="16497" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.lambdatest.com/selenium-playground/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[128.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Windows 10]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="launchPage(java.lang.String)[pri:0, instance:com.lambdatest.LambdaTestNGTest@385e9564]" started-at="2025-10-15T16:27:09 CDT" name="launchPage" finished-at="2025-10-15T16:27:12 CDT" duration-ms="2315" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.lambdatest.com/selenium-playground/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchPage -->
+        <test-method signature="verifyPageTitle()[pri:0, instance:com.lambdatest.LambdaTestNGTest@385e9564]" started-at="2025-10-15T16:27:12 CDT" name="verifyPageTitle" finished-at="2025-10-15T16:27:12 CDT" duration-ms="330" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [LambdaTest] but found [Selenium Grid Online | Run Selenium Test On Cloud]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [LambdaTest] but found [Selenium Grid Online | Run Selenium Test On Cloud]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at com.lambdatest.LambdaTestNGTest.verifyPageTitle(LambdaTestNGTest.java:92)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
+at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)
+at org.testng.internal.invokers.InvokeMethodRunnable.run(InvokeMethodRunnable.java:33)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:353)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:308)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:696)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Page Title:Selenium Grid Online | Run Selenium Test On Cloud]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyPageTitle -->
+        <test-method is-config="true" signature="launchPage(java.lang.String)[pri:0, instance:com.lambdatest.LambdaTestNGTest@385e9564]" started-at="2025-10-15T16:27:12 CDT" name="launchPage" finished-at="2025-10-15T16:27:12 CDT" duration-ms="337" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.lambdatest.com/selenium-playground/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchPage -->
+        <test-method signature="validateCheckbox()[pri:1, instance:com.lambdatest.LambdaTestNGTest@385e9564]" started-at="2025-10-15T16:27:12 CDT" name="validateCheckbox" finished-at="2025-10-15T16:27:14 CDT" duration-ms="2172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCheckbox -->
+        <test-method is-config="true" signature="launchPage(java.lang.String)[pri:0, instance:com.lambdatest.LambdaTestNGTest@385e9564]" started-at="2025-10-15T16:27:14 CDT" name="launchPage" finished-at="2025-10-15T16:27:15 CDT" duration-ms="302" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.lambdatest.com/selenium-playground/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchPage -->
+        <test-method signature="validateAlert()[pri:2, instance:com.lambdatest.LambdaTestNGTest@385e9564]" started-at="2025-10-15T16:27:15 CDT" name="validateAlert" finished-at="2025-10-15T16:27:17 CDT" duration-ms="2261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAlert -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.lambdatest.LambdaTestNGTest@385e9564]" started-at="2025-10-15T16:27:17 CDT" name="teardown" finished-at="2025-10-15T16:27:17 CDT" duration-ms="156" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.lambdatest.LambdaTestNGTest -->
+    </test> <!-- Chrome Test -->
+    <test started-at="2025-10-15T16:27:17 CDT" name="Firefox Test" finished-at="2025-10-15T16:27:51 CDT" duration-ms="34050">
+      <class name="com.lambdatest.LambdaTestNGTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.lambdatest.LambdaTestNGTest@484970b0]" started-at="2025-10-15T16:27:17 CDT" name="setUp" finished-at="2025-10-15T16:27:31 CDT" duration-ms="13375" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.lambdatest.com/selenium-playground/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[130.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Windows 11]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="launchPage(java.lang.String)[pri:0, instance:com.lambdatest.LambdaTestNGTest@484970b0]" started-at="2025-10-15T16:27:31 CDT" name="launchPage" finished-at="2025-10-15T16:27:37 CDT" duration-ms="6708" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.lambdatest.com/selenium-playground/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchPage -->
+        <test-method signature="verifyPageTitle()[pri:0, instance:com.lambdatest.LambdaTestNGTest@484970b0]" started-at="2025-10-15T16:27:37 CDT" name="verifyPageTitle" finished-at="2025-10-15T16:27:38 CDT" duration-ms="364" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [LambdaTest] but found [Selenium Grid Online | Run Selenium Test On Cloud]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [LambdaTest] but found [Selenium Grid Online | Run Selenium Test On Cloud]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at com.lambdatest.LambdaTestNGTest.verifyPageTitle(LambdaTestNGTest.java:92)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
+at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)
+at org.testng.internal.invokers.InvokeMethodRunnable.run(InvokeMethodRunnable.java:33)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:353)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:308)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:696)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Page Title:Selenium Grid Online | Run Selenium Test On Cloud]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyPageTitle -->
+        <test-method is-config="true" signature="launchPage(java.lang.String)[pri:0, instance:com.lambdatest.LambdaTestNGTest@484970b0]" started-at="2025-10-15T16:27:38 CDT" name="launchPage" finished-at="2025-10-15T16:27:39 CDT" duration-ms="950" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.lambdatest.com/selenium-playground/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchPage -->
+        <test-method signature="validateCheckbox()[pri:1, instance:com.lambdatest.LambdaTestNGTest@484970b0]" started-at="2025-10-15T16:27:39 CDT" name="validateCheckbox" finished-at="2025-10-15T16:27:43 CDT" duration-ms="4888" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCheckbox -->
+        <test-method is-config="true" signature="launchPage(java.lang.String)[pri:0, instance:com.lambdatest.LambdaTestNGTest@484970b0]" started-at="2025-10-15T16:27:43 CDT" name="launchPage" finished-at="2025-10-15T16:27:45 CDT" duration-ms="1309" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.lambdatest.com/selenium-playground/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchPage -->
+        <test-method signature="validateAlert()[pri:2, instance:com.lambdatest.LambdaTestNGTest@484970b0]" started-at="2025-10-15T16:27:45 CDT" name="validateAlert" finished-at="2025-10-15T16:27:50 CDT" duration-ms="4951" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAlert -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.lambdatest.LambdaTestNGTest@484970b0]" started-at="2025-10-15T16:27:50 CDT" name="teardown" finished-at="2025-10-15T16:27:51 CDT" duration-ms="1489" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.lambdatest.LambdaTestNGTest -->
+    </test> <!-- Firefox Test -->
+    <test started-at="2025-10-15T16:27:51 CDT" name="Microsoft Edge Test" finished-at="2025-10-15T16:28:06 CDT" duration-ms="14781">
+      <class name="com.lambdatest.LambdaTestNGTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.lambdatest.LambdaTestNGTest@7c83dc97]" started-at="2025-10-15T16:27:51 CDT" name="setUp" finished-at="2025-10-15T16:28:00 CDT" duration-ms="8592" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Microsoft Edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.lambdatest.com/selenium-playground/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[127.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[macOS Ventura]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="launchPage(java.lang.String)[pri:0, instance:com.lambdatest.LambdaTestNGTest@7c83dc97]" started-at="2025-10-15T16:28:00 CDT" name="launchPage" finished-at="2025-10-15T16:28:01 CDT" duration-ms="1197" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.lambdatest.com/selenium-playground/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchPage -->
+        <test-method signature="verifyPageTitle()[pri:0, instance:com.lambdatest.LambdaTestNGTest@7c83dc97]" started-at="2025-10-15T16:28:01 CDT" name="verifyPageTitle" finished-at="2025-10-15T16:28:01 CDT" duration-ms="353" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [LambdaTest] but found [Selenium Grid Online | Run Selenium Test On Cloud]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [LambdaTest] but found [Selenium Grid Online | Run Selenium Test On Cloud]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at com.lambdatest.LambdaTestNGTest.verifyPageTitle(LambdaTestNGTest.java:92)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
+at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)
+at org.testng.internal.invokers.InvokeMethodRunnable.run(InvokeMethodRunnable.java:33)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:353)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:308)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:696)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Page Title:Selenium Grid Online | Run Selenium Test On Cloud]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyPageTitle -->
+        <test-method is-config="true" signature="launchPage(java.lang.String)[pri:0, instance:com.lambdatest.LambdaTestNGTest@7c83dc97]" started-at="2025-10-15T16:28:01 CDT" name="launchPage" finished-at="2025-10-15T16:28:02 CDT" duration-ms="312" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.lambdatest.com/selenium-playground/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchPage -->
+        <test-method signature="validateCheckbox()[pri:1, instance:com.lambdatest.LambdaTestNGTest@7c83dc97]" started-at="2025-10-15T16:28:02 CDT" name="validateCheckbox" finished-at="2025-10-15T16:28:03 CDT" duration-ms="1612" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCheckbox -->
+        <test-method is-config="true" signature="launchPage(java.lang.String)[pri:0, instance:com.lambdatest.LambdaTestNGTest@7c83dc97]" started-at="2025-10-15T16:28:03 CDT" name="launchPage" finished-at="2025-10-15T16:28:04 CDT" duration-ms="359" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.lambdatest.com/selenium-playground/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchPage -->
+        <test-method signature="validateAlert()[pri:2, instance:com.lambdatest.LambdaTestNGTest@7c83dc97]" started-at="2025-10-15T16:28:04 CDT" name="validateAlert" finished-at="2025-10-15T16:28:06 CDT" duration-ms="2089" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAlert -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.lambdatest.LambdaTestNGTest@7c83dc97]" started-at="2025-10-15T16:28:06 CDT" name="teardown" finished-at="2025-10-15T16:28:06 CDT" duration-ms="247" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.lambdatest.LambdaTestNGTest -->
+    </test> <!-- Microsoft Edge Test -->
+    <test started-at="2025-10-15T16:28:06 CDT" name="Internet Explorer Test" finished-at="2025-10-15T16:28:38 CDT" duration-ms="31631">
+      <class name="com.lambdatest.LambdaTestNGTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.lambdatest.LambdaTestNGTest@55740540]" started-at="2025-10-15T16:28:06 CDT" name="setUp" finished-at="2025-10-15T16:28:18 CDT" duration-ms="11617" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Internet Explorer]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.lambdatest.com/selenium-playground/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[11.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Windows 10]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="launchPage(java.lang.String)[pri:0, instance:com.lambdatest.LambdaTestNGTest@55740540]" started-at="2025-10-15T16:28:18 CDT" name="launchPage" finished-at="2025-10-15T16:28:20 CDT" duration-ms="2044" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.lambdatest.com/selenium-playground/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchPage -->
+        <test-method signature="verifyPageTitle()[pri:0, instance:com.lambdatest.LambdaTestNGTest@55740540]" started-at="2025-10-15T16:28:20 CDT" name="verifyPageTitle" finished-at="2025-10-15T16:28:20 CDT" duration-ms="377" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [LambdaTest] but found [Selenium Grid Online | Run Selenium Test On Cloud]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [LambdaTest] but found [Selenium Grid Online | Run Selenium Test On Cloud]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at com.lambdatest.LambdaTestNGTest.verifyPageTitle(LambdaTestNGTest.java:92)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
+at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)
+at org.testng.internal.invokers.InvokeMethodRunnable.run(InvokeMethodRunnable.java:33)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:353)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:308)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:696)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Page Title:Selenium Grid Online | Run Selenium Test On Cloud]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyPageTitle -->
+        <test-method is-config="true" signature="launchPage(java.lang.String)[pri:0, instance:com.lambdatest.LambdaTestNGTest@55740540]" started-at="2025-10-15T16:28:20 CDT" name="launchPage" finished-at="2025-10-15T16:28:21 CDT" duration-ms="782" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.lambdatest.com/selenium-playground/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchPage -->
+        <test-method signature="validateCheckbox()[pri:1, instance:com.lambdatest.LambdaTestNGTest@55740540]" started-at="2025-10-15T16:28:21 CDT" name="validateCheckbox" finished-at="2025-10-15T16:28:24 CDT" duration-ms="2738" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCheckbox -->
+        <test-method is-config="true" signature="launchPage(java.lang.String)[pri:0, instance:com.lambdatest.LambdaTestNGTest@55740540]" started-at="2025-10-15T16:28:24 CDT" name="launchPage" finished-at="2025-10-15T16:28:24 CDT" duration-ms="803" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.lambdatest.com/selenium-playground/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchPage -->
+        <test-method signature="validateAlert()[pri:2, instance:com.lambdatest.LambdaTestNGTest@55740540]" started-at="2025-10-15T16:28:24 CDT" name="validateAlert" finished-at="2025-10-15T16:28:38 CDT" duration-ms="13153" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for alert to be present (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:41000/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, webdriver.remote.sessionid: b3502bdc-12c5-4a92-8c41-91b...}
+Session ID: b3502bdc-12c5-4a92-8c41-91b21686d7be]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for alert to be present (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:41000/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, webdriver.remote.sessionid: b3502bdc-12c5-4a92-8c41-91b...}
+Session ID: b3502bdc-12c5-4a92-8c41-91b21686d7be
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at com.lambdatest.LambdaTestNGTest.validateAlert(LambdaTestNGTest.java:124)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
+at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)
+at org.testng.internal.invokers.InvokeMethodRunnable.run(InvokeMethodRunnable.java:33)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:353)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:308)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:696)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAlert -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.lambdatest.LambdaTestNGTest@55740540]" started-at="2025-10-15T16:28:38 CDT" name="teardown" finished-at="2025-10-15T16:28:38 CDT" duration-ms="96" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.lambdatest.LambdaTestNGTest -->
+    </test> <!-- Internet Explorer Test -->
+  </suite> <!-- Suite -->
+</testng-results>

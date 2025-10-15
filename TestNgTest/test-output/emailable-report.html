@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Chrome Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">24,465</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Firefox Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">34,050</td><td></td><td></td></tr>
+<tr><td><a href="#t2">Microsoft Edge Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">14,781</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t3">Internet Explorer Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">31,631</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">7</th><th class="num">0</th><th class="num">0</th><th class="num attn">5</th><th class="num">104,927</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Chrome Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.lambdatest.LambdaTestNGTest</td><td><a href="#m0">verifyPageTitle</a></td><td rowspan="1">1760563632026</td><td rowspan="1">330</td></tr><tr><th colspan="4">Chrome Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.lambdatest.LambdaTestNGTest</td><td><a href="#m1">validateAlert</a></td><td rowspan="1">1760563635180</td><td rowspan="1">2261</td></tr><tr class="passedeven"><td><a href="#m2">validateCheckbox</a></td><td rowspan="1">1760563632703</td><td rowspan="1">2172</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Firefox Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.lambdatest.LambdaTestNGTest</td><td><a href="#m3">verifyPageTitle</a></td><td rowspan="1">1760563657751</td><td rowspan="1">364</td></tr><tr><th colspan="4">Firefox Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.lambdatest.LambdaTestNGTest</td><td><a href="#m4">validateAlert</a></td><td rowspan="1">1760563665269</td><td rowspan="1">4951</td></tr><tr class="passedeven"><td><a href="#m5">validateCheckbox</a></td><td rowspan="1">1760563659068</td><td rowspan="1">4888</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">Microsoft Edge Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.lambdatest.LambdaTestNGTest</td><td><a href="#m6">verifyPageTitle</a></td><td rowspan="1">1760563681526</td><td rowspan="1">353</td></tr><tr><th colspan="4">Microsoft Edge Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.lambdatest.LambdaTestNGTest</td><td><a href="#m7">validateAlert</a></td><td rowspan="1">1760563684171</td><td rowspan="1">2089</td></tr><tr class="passedeven"><td><a href="#m8">validateCheckbox</a></td><td rowspan="1">1760563682197</td><td rowspan="1">1612</td></tr></tbody>
+<tbody id="t3"><tr><th colspan="4">Internet Explorer Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.lambdatest.LambdaTestNGTest</td><td><a href="#m9">validateAlert</a></td><td rowspan="1">1760563704901</td><td rowspan="1">13153</td></tr><tr class="failedeven"><td><a href="#m10">verifyPageTitle</a></td><td rowspan="1">1760563700191</td><td rowspan="1">377</td></tr><tr><th colspan="4">Internet Explorer Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.lambdatest.LambdaTestNGTest</td><td><a href="#m11">validateCheckbox</a></td><td rowspan="1">1760563701355</td><td rowspan="1">2738</td></tr></tbody>
+</table>
+<h2>Chrome Test</h2><h3 id="m0">com.lambdatest.LambdaTestNGTest#verifyPageTitle</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Page Title:Selenium Grid Online | Run Selenium Test On Cloud</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	expected [LambdaTest] but found [Selenium Grid Online | Run Selenium Test On Cloud]
+	at com.lambdatest.LambdaTestNGTest.verifyPageTitle(LambdaTestNGTest.java:92)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.lambdatest.LambdaTestNGTest#validateAlert</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.lambdatest.LambdaTestNGTest#validateCheckbox</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Firefox Test</h2><h3 id="m3">com.lambdatest.LambdaTestNGTest#verifyPageTitle</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Page Title:Selenium Grid Online | Run Selenium Test On Cloud</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	expected [LambdaTest] but found [Selenium Grid Online | Run Selenium Test On Cloud]
+	at com.lambdatest.LambdaTestNGTest.verifyPageTitle(LambdaTestNGTest.java:92)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.lambdatest.LambdaTestNGTest#validateAlert</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.lambdatest.LambdaTestNGTest#validateCheckbox</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Microsoft Edge Test</h2><h3 id="m6">com.lambdatest.LambdaTestNGTest#verifyPageTitle</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Page Title:Selenium Grid Online | Run Selenium Test On Cloud</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	expected [LambdaTest] but found [Selenium Grid Online | Run Selenium Test On Cloud]
+	at com.lambdatest.LambdaTestNGTest.verifyPageTitle(LambdaTestNGTest.java:92)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.lambdatest.LambdaTestNGTest#validateAlert</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.lambdatest.LambdaTestNGTest#validateCheckbox</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Internet Explorer Test</h2><h3 id="m9">com.lambdatest.LambdaTestNGTest#validateAlert</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for alert to be present (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:41000/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, webdriver.remote.sessionid: b3502bdc-12c5-4a92-8c41-91b...}
+Session ID: b3502bdc-12c5-4a92-8c41-91b21686d7be
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.lambdatest.LambdaTestNGTest.validateAlert(LambdaTestNGTest.java:124)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.lambdatest.LambdaTestNGTest#verifyPageTitle</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Page Title:Selenium Grid Online | Run Selenium Test On Cloud</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	expected [LambdaTest] but found [Selenium Grid Online | Run Selenium Test On Cloud]
+	at com.lambdatest.LambdaTestNGTest.verifyPageTitle(LambdaTestNGTest.java:92)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.lambdatest.LambdaTestNGTest#validateCheckbox</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
