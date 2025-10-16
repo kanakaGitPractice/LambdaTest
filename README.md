@@ -1,4 +1,22 @@
-Executed TestNg tests on Lambda cloud for TestNgTest
+***Executed TestNg tests on Lambda cloud for JavaSelenium10**1**
+
+**url**:https://automation.lambdatest.com/build?pageType=build
+**Build name**:LambdaTest Java Selenium Buildild
+**Project** : JavaSelenium101
+**Test IDs**:
+**chrome**: DA-WIN-2194359-1760640388261182460ZNW
+**Firefox** : DA-WIN-2194359-1760640428167838654KAP
+**Edge**: DA-MAC-2194359-1760640490333609636ZTS
+IE:DA-WIN-2194359-1760640533675608299FYH (execution is taking forever).so I stopped execution.
+**All tests are passed in Chrome,Firefox,Edge browsers, but got failed on IE browser.**
+
+<img width="1621" height="1022" alt="image" src="https://github.com/user-attachments/assets/01e2e9d0-5227-44ed-acec-f9eafc2ecd7a" />
+
+
+
+
+****************************************************************************************************TestNg Project********************************************************************************
+**Executed TestNg tests on Lambda cloud for TestNgTest**
 
 url:https://automation.lambdatest.com/build?pageType=build
 Build name: LambdaTest TestNg Build
