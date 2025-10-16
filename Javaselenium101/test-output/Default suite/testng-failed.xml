@@ -3,16 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ChromeJavaSelenium">
+      <class name="com.lambda.JavaSelenium">
         <methods>
-          <include name="testSimpleForm"/>
-          <include name="teardown"/>
-          <include name="setUp"/>
-          <include name="testSliders"/>
           <include name="submitForm"/>
           <include name="launchPage"/>
+          <include name="setUp"/>
+          <include name="testSliders"/>
+          <include name="testSimpleForm"/>
+          <include name="teardown"/>
         </methods>
-      </class> <!-- ChromeJavaSelenium -->
+      </class> <!-- com.lambda.JavaSelenium -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

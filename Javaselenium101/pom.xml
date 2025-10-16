@@ -74,6 +74,8 @@
     <artifactId>selenium-firefox-driver</artifactId>
     <version>4.35.0</version>
 </dependency>
+<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-ie-driver -->
+
 <dependency>
     <groupId>org.apache.poi</groupId>
     <artifactId>poi</artifactId>

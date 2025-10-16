@@ -1,5 +1,7 @@
+package com.lambda;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.Duration;
 import java.util.HashMap;
@@ -28,6 +30,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.Reporter;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -38,70 +41,66 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class ChromeJavaSelenium {
+public class JavaSelenium {
 	 
 	private String message="Welcome to LambdaTest";
 	String actualMsg =null;
 	RemoteWebDriver driver=null;
 	String gridURL = "@hub.lambdatest.com/wd/hub";
-	XSSFWorkbook book;
-	XSSFSheet sheet;
-	XSSFRow row;
-	XSSFCell col;
+	
 
-	    @BeforeClass
-	    public void setUp() throws IOException {
+	@Parameters(value= {"Browser Name","Browser Version","Platform Name"}) 
+	@BeforeClass
+	public void setUp(String browserName,String version,String platform) throws MalformedURLException {
 			String username = System.getenv("LT_USERNAME") == null ? "pkanakadurgabqe" : System.getenv("LT_USERNAME");
-	        String authkey = System.getenv("LT_Access Key") == null ? "zMeNWbVncBwDlKdhvHEdRAmM37UHazGqcnkIg7XSoDlZfzR6Rb" : System.getenv("LT_Access Key");
+	        String authkey = System.getenv("LT_ACCESS_KEY") == null ? "zMeNWbVncBwDlKdhvHEdRAmM37UHazGqcnkIg7XSoDlZfzR6Rb" : System.getenv("LT_ACCESS_KEY");
 	        ;
 	        String hub = "@hub.lambdatest.com/wd/hub";
 	        
-	     /*   FileInputStream file = new FileInputStream("C:\\Users\\pkana\\git\\LamdaTest\\Javaselenium101\\src\\test\\resources\\selenium_java_101.xlsx");
-	        book = new XSSFWorkbook(file);
-	        sheet = book.getSheet("Sheet1");
-	        int rows = sheet.getLastRowNum();
-	  	    int cols = sheet.getRow(1).getLastCellNum();
-	  	  for(int i =0; i<rows;i++) {
-			  XSSFRow row = sheet.getRow(i);
-			  for(int j=0;j<cols;j++) {
-				  System.out.println(row.getCell(j));
-			  }
-		  }*/
-	        DesiredCapabilities caps = new DesiredCapabilities();
-	        caps.setPlatform(Platform.WIN10);
-	        caps.setCapability("browserName", "Chrome");
-	         caps.setCapability("version","dev");
-	        caps.setCapability("build", "selenium With Java");
-	        caps.setCapability("name",  this.getClass().getName());
-	        caps.setCapability("plugin", "java-java");
-	        caps.setCapability("video", true);
-	        caps.setCapability("visual", true);
-	        caps.setCapability("tunnel", true);
-	        caps.setCapability("network", true);
-
-	        String[] Tags = new String[] { "Feature", "Falcon", "Severe" };
+	        DesiredCapabilities cap = new DesiredCapabilities();
+	        HashMap<String, Object> ltOptions = new HashMap<String, Object>();
+	        
+	        //specifying desired capabilities like browsername,platform 
+			cap.setCapability("browserName",browserName);
+			cap.setCapability("platformName",platform);
+			cap.setCapability("browserVersion", version);
+			
+			//setting lambda capabilities in hashmap
+			ltOptions.put("video", true);
+			ltOptions.put("console", true);
+			ltOptions.put("network", true);
+			ltOptions.put("visual", true);
+			ltOptions.put("build", "LambdaTest Java Selenium Build");
+			ltOptions.put("project", "JavaSelenium101");
+			
+			if(!browserName.equalsIgnoreCase("Internet Explorer")){
+				ltOptions.put("selenium_version", "4.35.0");
+				ltOptions.put("w3c", true);
+			 }
+			
+	       
+	        cap.setCapability("LT:Options", ltOptions);
 	
-	        caps.setCapability("tags", Tags);
-	
-	        driver = new RemoteWebDriver(new URL("https://" + username + ":" + authkey + hub), caps);
+	        driver = new RemoteWebDriver(new URL("https://" + username + ":" + authkey + hub), cap);
 }
-  
+        @Parameters(value= {"URL"})
 	    @BeforeMethod
-    	public void launchPage() {
-				driver.get("https://www.lambdatest.com/selenium-playground");
+    	public void launchPage(String url) {
+				driver.get(url);
 				driver.manage().window().maximize();
-				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+				By ele = By.id("__next");
+				new WebDriverWait(driver,Duration.ofSeconds(10)).until(ExpectedConditions.presenceOfAllElementsLocatedBy(ele));
 	   }
         
 	    
     //Testing simple form demo
-   	@Test(timeOut = 20000)
+   	@Test(timeOut = 20000,priority=0)
 	public void testSimpleForm() {
 		
 		driver.executeScript("lambdatest_executor: {\"action\": \"stepcontext\", \"arguments\": {\"data\": \"Opening WebApp\", \"level\": \"info\"}}");
 		driver.findElement(By.linkText("Simple Form Demo")).click();
 		String url = driver.getCurrentUrl();
-		System.out.println(url);
+		//System.out.println(url);
 		if(url.contains("simple-form-demo")) {
 			Reporter.log("url contains simple-form-demo text");
 		}
@@ -112,27 +111,30 @@ public class ChromeJavaSelenium {
 	}
    	
 	
-	@Test(timeOut = 20000)
+	@Test(priority=1)
 	public void testSliders() {
 		driver.executeScript("lambdatest_executor: {\"action\": \"stepcontext\", \"arguments\": {\"data\": \"Opening WebApp\", \"level\": \"info\"}}");
 		driver.findElement(By.linkText("Drag & Drop Sliders")).click();
-		WebElement slider =driver.findElement(By.cssSelector("div.sp__range>input[value='15']"));
-		
-		int range = Integer.parseInt(driver.findElement(By.id("rangeSuccess")).getText());
+		WebElement slider =driver.findElement(By.cssSelector("input[value='15']"));
+		WebElement rangeMover = driver.findElement(By.id("rangeSuccess"));
+		int range = Integer.parseInt(rangeMover.getText());
 		while(range !=95){
 			slider.sendKeys(Keys.ARROW_RIGHT);
-			range = Integer.parseInt(driver.findElement(By.id("rangeSuccess")).getText());
+			range = Integer.parseInt(rangeMover.getText());
 		}
+		
+		
+		
 	}
 	
 	
-	@Test(timeOut = 20000)
+	@Test(timeOut = 20000,priority=2)
 	public void submitForm() throws InterruptedException {
 		driver.executeScript("lambdatest_executor: {\"action\": \"stepcontext\", \"arguments\": {\"data\": \"Opening WebApp\", \"level\": \"info\"}}");
 		driver.findElement(By.partialLinkText("Input Form ")).click();
 		WebElement btnSubmit = driver.findElement(By.xpath("//button[text()='Submit']"));
 		btnSubmit.click();
-		Thread.sleep(100);
+		Thread.sleep(1000);
 		
 		driver.findElement(By.id("name")).sendKeys("kanaka");
 		driver.findElement(By.id("inputEmail4")).sendKeys("kanaka@gmail.com");//
@@ -156,7 +158,7 @@ public class ChromeJavaSelenium {
 		Assert.assertEquals(actualMsg,"Thanks for contacting us, we will get back to you shortly.");
 	}
 	
-	@AfterMethod
+	@AfterClass
 	public void teardown() {
 		if(driver!=null) {
 			driver.quit();
