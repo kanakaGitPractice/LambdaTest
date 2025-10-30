@@ -26,7 +26,7 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 
-public class SeleniumAdvanced extends Base {
+public class SeleniumAdvanced  {
 	String gridURL = "@hub.lambdatest.com/wd/hub";
 	RemoteWebDriver driver=null;
 	
@@ -51,15 +51,12 @@ public class SeleniumAdvanced extends Base {
 			ltOptions.put("console", true);
 			ltOptions.put("network", true);
 			ltOptions.put("visual", true);
-			ltOptions.put("build", "LambdaTest Java Selenium Build");
-			ltOptions.put("project", "JavaSelenium101");
+			ltOptions.put("build", "LambdaTest Advanced Java Selenium Build");
+			ltOptions.put("project", "SeleniumAdvancedAssignment");
+			ltOptions.put("selenium_version", "4.35.0");
+			ltOptions.put("w3c", true);
 			
-			if(!browserName.equalsIgnoreCase("Internet Explorer")){
-				ltOptions.put("selenium_version", "4.35.0");
-				ltOptions.put("w3c", true);
-			 }
 			
-	       
 	        cap.setCapability("LT:Options", ltOptions);
 	
 	        driver = new RemoteWebDriver(new URL("https://" + username + ":" + authkey + hub), cap);

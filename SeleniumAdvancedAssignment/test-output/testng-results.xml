@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[opened windows:[B74F375A88494EF28123F0DFC0C4AF5C, 9F79F2E237DECA662A20550648237869]]]>
+      <![CDATA[opened windows:[38B2D1F490EF63D80F20EDCD4D3F4FA9, ADED43DD55F4548F0FA1AA66D0AB5C1B]]]>
     </line>
     <line>
       <![CDATA[Current Window Count:1]]>
     </line>
     <line>
-      <![CDATA[opened windows:[C3E40E9CB1223D5497F76FB37B9F2A13, BC9439B09EB03464AB905643E1148CF5]]]>
+      <![CDATA[opened windows:[5EE5A33790025CE4EE3EEBD63C9E3359, 166E35B9A4AA693FC5414E3DC423D317]]]>
     </line>
     <line>
       <![CDATA[Current Window Count:1]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-10-30T14:09:51 CDT" name="Suite" finished-at="2025-10-30T14:10:33 CDT" duration-ms="42054">
+  <suite started-at="2025-10-30T14:21:03 CDT" name="Suite" finished-at="2025-10-30T14:21:38 CDT" duration-ms="35663">
     <groups>
     </groups>
-    <test started-at="2025-10-30T14:09:51 CDT" name="Chrome Test" finished-at="2025-10-30T14:10:16 CDT" duration-ms="24460">
+    <test started-at="2025-10-30T14:21:03 CDT" name="Chrome Test" finished-at="2025-10-30T14:21:20 CDT" duration-ms="17593">
       <class name="advancedSelenium.SeleniumAdvanced">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:advancedSelenium.SeleniumAdvanced@5b94b04d]" started-at="2025-10-30T14:09:51 CDT" name="setUp" finished-at="2025-10-30T14:10:03 CDT" duration-ms="11269" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:advancedSelenium.SeleniumAdvanced@385e9564]" started-at="2025-10-30T14:21:03 CDT" name="setUp" finished-at="2025-10-30T14:21:09 CDT" duration-ms="6184" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -40,7 +40,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="launchPage(java.lang.String)[pri:0, instance:advancedSelenium.SeleniumAdvanced@5b94b04d]" started-at="2025-10-30T14:10:03 CDT" name="launchPage" finished-at="2025-10-30T14:10:06 CDT" duration-ms="3486" status="PASS">
+        <test-method is-config="true" signature="launchPage(java.lang.String)[pri:0, instance:advancedSelenium.SeleniumAdvanced@385e9564]" started-at="2025-10-30T14:21:09 CDT" name="launchPage" finished-at="2025-10-30T14:21:11 CDT" duration-ms="2688" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -51,7 +51,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchPage -->
-        <test-method signature="testScenario()[pri:0, instance:advancedSelenium.SeleniumAdvanced@5b94b04d]" started-at="2025-10-30T14:10:06 CDT" name="testScenario" finished-at="2025-10-30T14:10:16 CDT" duration-ms="9482" status="FAIL">
+        <test-method signature="testScenario()[pri:0, instance:advancedSelenium.SeleniumAdvanced@385e9564]" started-at="2025-10-30T14:21:11 CDT" name="testScenario" finished-at="2025-10-30T14:21:20 CDT" duration-ms="8538" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
@@ -64,7 +64,7 @@ expected [TestingWhiz Integration With LambdaTest] but found [Running Automation
 expected [https://community.lambdatest.com] but found [https://community.lambdatest.com/]
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at advancedSelenium.SeleniumAdvanced.testScenario(SeleniumAdvanced.java:132)
+at advancedSelenium.SeleniumAdvanced.testScenario(SeleniumAdvanced.java:129)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -91,22 +91,22 @@ at java.base/java.lang.Thread.run(Thread.java:1570)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
-              <![CDATA[opened windows:[B74F375A88494EF28123F0DFC0C4AF5C, 9F79F2E237DECA662A20550648237869]]]>
+              <![CDATA[opened windows:[38B2D1F490EF63D80F20EDCD4D3F4FA9, ADED43DD55F4548F0FA1AA66D0AB5C1B]]]>
             </line>
             <line>
               <![CDATA[Current Window Count:1]]>
             </line>
           </reporter-output>
         </test-method> <!-- testScenario -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:advancedSelenium.SeleniumAdvanced@5b94b04d]" started-at="2025-10-30T14:10:16 CDT" name="teardown" finished-at="2025-10-30T14:10:16 CDT" duration-ms="180" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:advancedSelenium.SeleniumAdvanced@385e9564]" started-at="2025-10-30T14:21:20 CDT" name="teardown" finished-at="2025-10-30T14:21:20 CDT" duration-ms="141" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- advancedSelenium.SeleniumAdvanced -->
     </test> <!-- Chrome Test -->
-    <test started-at="2025-10-30T14:10:16 CDT" name="Microsoft Edge Test" finished-at="2025-10-30T14:10:33 CDT" duration-ms="17466">
+    <test started-at="2025-10-30T14:21:20 CDT" name="Microsoft Edge Test" finished-at="2025-10-30T14:21:38 CDT" duration-ms="17967">
       <class name="advancedSelenium.SeleniumAdvanced">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:advancedSelenium.SeleniumAdvanced@11fc564b]" started-at="2025-10-30T14:10:16 CDT" name="setUp" finished-at="2025-10-30T14:10:25 CDT" duration-ms="8582" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:advancedSelenium.SeleniumAdvanced@76ed1b7c]" started-at="2025-10-30T14:21:20 CDT" name="setUp" finished-at="2025-10-30T14:21:29 CDT" duration-ms="8992" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -127,7 +127,7 @@ at java.base/java.lang.Thread.run(Thread.java:1570)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="launchPage(java.lang.String)[pri:0, instance:advancedSelenium.SeleniumAdvanced@11fc564b]" started-at="2025-10-30T14:10:25 CDT" name="launchPage" finished-at="2025-10-30T14:10:27 CDT" duration-ms="1960" status="PASS">
+        <test-method is-config="true" signature="launchPage(java.lang.String)[pri:0, instance:advancedSelenium.SeleniumAdvanced@76ed1b7c]" started-at="2025-10-30T14:21:29 CDT" name="launchPage" finished-at="2025-10-30T14:21:31 CDT" duration-ms="1903" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -138,7 +138,7 @@ at java.base/java.lang.Thread.run(Thread.java:1570)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchPage -->
-        <test-method signature="testScenario()[pri:0, instance:advancedSelenium.SeleniumAdvanced@11fc564b]" started-at="2025-10-30T14:10:27 CDT" name="testScenario" finished-at="2025-10-30T14:10:33 CDT" duration-ms="6739" status="FAIL">
+        <test-method signature="testScenario()[pri:0, instance:advancedSelenium.SeleniumAdvanced@76ed1b7c]" started-at="2025-10-30T14:21:31 CDT" name="testScenario" finished-at="2025-10-30T14:21:38 CDT" duration-ms="6855" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
@@ -151,7 +151,7 @@ expected [TestingWhiz Integration With LambdaTest] but found [Running Automation
 expected [https://community.lambdatest.com] but found [https://community.lambdatest.com/]
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at advancedSelenium.SeleniumAdvanced.testScenario(SeleniumAdvanced.java:132)
+at advancedSelenium.SeleniumAdvanced.testScenario(SeleniumAdvanced.java:129)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -178,14 +178,14 @@ at java.base/java.lang.Thread.run(Thread.java:1570)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
-              <![CDATA[opened windows:[C3E40E9CB1223D5497F76FB37B9F2A13, BC9439B09EB03464AB905643E1148CF5]]]>
+              <![CDATA[opened windows:[5EE5A33790025CE4EE3EEBD63C9E3359, 166E35B9A4AA693FC5414E3DC423D317]]]>
             </line>
             <line>
               <![CDATA[Current Window Count:1]]>
             </line>
           </reporter-output>
         </test-method> <!-- testScenario -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:advancedSelenium.SeleniumAdvanced@11fc564b]" started-at="2025-10-30T14:10:33 CDT" name="teardown" finished-at="2025-10-30T14:10:33 CDT" duration-ms="175" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:advancedSelenium.SeleniumAdvanced@76ed1b7c]" started-at="2025-10-30T14:21:38 CDT" name="teardown" finished-at="2025-10-30T14:21:38 CDT" duration-ms="205" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
