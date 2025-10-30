@@ -41,12 +41,11 @@ Build: LambdaTest Advanced Java Selenium Build
 Project: SeleniumAdvancedAssignment
 
 TestIDs:
-chrome: DA-WIN-2194359-1761852064974650147HIC
-Edge: DA-MAC-2194359-1761852082141861406ONZ
+chrome: DA-WIN-2194359-1761857012687221307SVN
+Edge: DA-MAC-2194359-1761857041332988399ZMQ
 
-<img width="1781" height="1082" alt="image" src="https://github.com/user-attachments/assets/0a474300-511f-462c-82ab-8b6a1be60e1e" />
-<img width="1918" height="1081" alt="image" src="https://github.com/user-attachments/assets/f9398913-bcab-4951-9974-88aea7365681" />
-
+<img width="1919" height="1045" alt="image" src="https://github.com/user-attachments/assets/55d37eda-de86-4733-97cc-26390493d61f" />
+<img width="1909" height="1087" alt="image" src="https://github.com/user-attachments/assets/ba6a31f8-b3c4-4b8f-bcd9-55da180fa69a" />
 
 
 
